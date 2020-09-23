@@ -27,3 +27,14 @@ Action -> Dispatcher -> Store -> View
 * [Redux Tutorials](https://github.com/markerikson/react-redux-links/blob/master/redux-tutorials.md)
 * [Flux Architecture In Depth Overview](https://facebook.github.io/flux/docs/in-depth-overview.html#content)
 
+
+## **React Redux Forms**
+
+* Enables you to mantain persistence accross mounting/unmounting
+
+* Performs form validation
+
+    ## Local Form 
+
+    * When you dont need persitence accross mounting/unmounting
+    * Performs form validation
