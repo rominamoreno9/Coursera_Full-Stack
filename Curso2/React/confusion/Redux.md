@@ -38,3 +38,12 @@ Action -> Dispatcher -> Store -> View
 
     * When you dont need persitence accross mounting/unmounting
     * Performs form validation
+
+
+## React Resources
+* [React Redux Form Documentation](https://davidkpiano.github.io/react-redux-form/docs.html)
+
+## Other Resources
+* [The boring React Redux forms](https://medium.com/@steida/the-boring-react-redux-forms-a15ee8a6b52b)
+* [How to populate react-redux-form with dynamic default values](https://swizec.com/blog/populate-react-redux-form-dynamic-default-values/swizec/8158)
+* [Should you store your form state in Redux?](https://goshakkk.name/should-i-put-form-state-into-redux/)
