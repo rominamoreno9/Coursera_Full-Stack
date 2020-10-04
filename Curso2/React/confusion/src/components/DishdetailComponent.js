@@ -22,15 +22,15 @@ class CommentForm extends Component {
   }
 
   handleSubmit(values) {
-    console.log("Values: " + JSON.stringify(values));
-    alert("Values: " + JSON.stringify(values));
+    this.props.addComment(this.props.dishId, values.rating, values.author, values.comment);
+    this.setState({modal: false});
   }
 
   buildOptions() {
     var arr = [];
 
     for (let i = 1; i <= 5; i++) {
-        arr.push(<option value={i}>{i}</option>)
+        arr.push(<option key={i} value={i}>{i}</option>)
     }
 
     return arr; 
@@ -113,7 +113,7 @@ function RenderDish({ dish }) {
   );
 }
 
-function RenderComments({ comments }) {
+function RenderComments({ comments, addComment, dishId }) {
   const commentLayout = comments.map((comment) => {
     return (
       <li key={comment.id}>
@@ -131,12 +131,15 @@ function RenderComments({ comments }) {
         <ul className="list-unstyled">
           {commentLayout}
         </ul>
+        <CommentForm dishId={dishId} addComment={addComment}/>
       </div>
     );
 
   } else {
     return (
-      <div></div>
+      <div>
+        <CommentForm dishId={dishId} addComment={addComment}/>
+      </div>
     );
   }
 }
@@ -161,8 +164,9 @@ const DishDetail = (props) => {
             <RenderDish dish={props.dish} />
           </div>
           <div className="col-12 col-md-5 m-1">
-            <RenderComments comments={props.comments} />
-            <CommentForm />
+            <RenderComments comments={props.comments} 
+              addComment={props.addComment}
+              dishId={props.dish.id} />
           </div>
         </div>
       </div>
