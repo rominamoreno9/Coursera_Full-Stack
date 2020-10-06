@@ -15,7 +15,7 @@
 * combineReducers
 
 
-<!-- ## **Flux Architecture**
+## **Flux Architecture**
 
 Discussion of problems with MVC - Link in documentation.
 
@@ -61,4 +61,9 @@ Action -> Dispatcher -> Store -> View
 ## Other Resources
 * [The boring React Redux forms](https://medium.com/@steida/the-boring-react-redux-forms-a15ee8a6b52b)
 * [How to populate react-redux-form with dynamic default values](https://swizec.com/blog/populate-react-redux-form-dynamic-default-values/swizec/8158)
-* [Should you store your form state in Redux?](https://goshakkk.name/should-i-put-form-state-into-redux/) -->
+* [Should you store your form state in Redux?](https://goshakkk.name/should-i-put-form-state-into-redux/)
+
+## Redux Resources
+* [Redux Actions](https://redux.js.org/basics/actions)
+* [Redux Reducers](https://redux.js.org/basics/reducers)
+* [Redux Usage with React](https://redux.js.org/basics/usage-with-react)
