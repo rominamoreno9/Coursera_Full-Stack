@@ -134,9 +134,11 @@ function About(props) {
             <h2>Corporate Leadership</h2>
           </div>
             <div className="col-12">
-              <Stagger in>
-                  <Media list>{leaders}</Media>
-                </Stagger>
+                <Media list>
+                    <Stagger in>
+                      {leaders}
+                    </Stagger>
+                  </Media>
             </div>
         </div>
       </div>

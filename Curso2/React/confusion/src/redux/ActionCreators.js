@@ -186,6 +186,7 @@ export const fetchLeaders = () => (dispatch) => {
 }
 
 export const postFeedback = (feedback) => (dispatch) => {
+    feedback.date = new Date().toISOString();
 
     return fetch(baseUrl + 'feedback', {
         method: 'POST',
